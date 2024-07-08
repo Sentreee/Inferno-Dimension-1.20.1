@@ -24,6 +24,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.INFERNO_DEBRIS.get());
                         pOutput.accept(ModBlocks.INFERNO_BLOCK.get());
+                        pOutput.accept(ModBlocks.ASH_BLOCK.get());
+                        pOutput.accept(ModBlocks.INFERNO_PORTAL.get());
 
 
 

@@ -24,6 +24,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.INFERNO_DEBRIS.get(),
                         ModBlocks.INFERNO_BLOCK.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.ASH_BLOCK.get());
+
         //this.tag(BlockTags.NEEDS_STONE_TOOL)
 
         //this.tag(BlockTags.NEEDS_IRON_TOOL)

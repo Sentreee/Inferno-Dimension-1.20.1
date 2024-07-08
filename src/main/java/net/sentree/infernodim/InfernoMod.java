@@ -15,7 +15,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sentree.infernodim.block.ModBlocks;
 import net.sentree.infernodim.item.ModCreativeModTabs;
 import net.sentree.infernodim.item.ModItems;
+import net.sentree.infernodim.worldgen.biome.ModTerrablender;
+import net.sentree.infernodim.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(InfernoMod.MOD_ID)
@@ -31,6 +34,8 @@ public class InfernoMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModTerrablender.registerBiomes();
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -39,6 +44,7 @@ public class InfernoMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 
     }
 

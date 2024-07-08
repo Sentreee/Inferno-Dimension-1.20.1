@@ -26,6 +26,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.INFERNO_BLOCK.get());
         this.dropSelf(ModBlocks.INFERNO_DEBRIS.get());
+        this.dropSelf(ModBlocks.ASH_BLOCK.get());
 
     }
 

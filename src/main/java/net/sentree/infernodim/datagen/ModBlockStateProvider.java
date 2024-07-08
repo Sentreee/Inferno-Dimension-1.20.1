@@ -17,6 +17,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.INFERNO_BLOCK);
         blockWithItem(ModBlocks.INFERNO_DEBRIS);
+        blockWithItem(ModBlocks.ASH_BLOCK);
+        blockWithItem(ModBlocks.INFERNO_PORTAL);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

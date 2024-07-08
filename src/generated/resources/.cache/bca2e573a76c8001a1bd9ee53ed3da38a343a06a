@@ -1,7 +1,13 @@
-// 1.20.1	2024-07-07T21:53:02.8263378	Block States: infernodim
+// 1.20.1	2024-07-07T23:26:12.3454534	Block States: infernodim
+a814ab586d2907c1f96d44dd09bd7dfa96390d86 assets/infernodim/blockstates/ash_block.json
 a41bbcf952a38d0c79c64aae67696f720e6575db assets/infernodim/blockstates/inferno_block.json
 e591cee3f2d03cfc21874c7726b4188b8f3ad4ae assets/infernodim/blockstates/inferno_debris.json
+68c38f6d10c813bf9d32a8e848a6897240fc1fd4 assets/infernodim/blockstates/inferno_portal.json
+e0ce61c719e4448d82afc507770bc26080890370 assets/infernodim/models/block/ash_block.json
 ea2969d723bbaefe80462b2a0dccc584d7839881 assets/infernodim/models/block/inferno_block.json
 fcf0e7600043bd4b136bf4b95de0f225571804e3 assets/infernodim/models/block/inferno_debris.json
+e0552da589021bcf5479450fe9d1314c526c3686 assets/infernodim/models/block/inferno_portal.json
+eaa2edd5ec0402aa9a469295985fc544376667a4 assets/infernodim/models/item/ash_block.json
 85c5a95cb80ac9e82d00e2cd52eb643c15dca485 assets/infernodim/models/item/inferno_block.json
 7e65eb8877bbedffc76f02dc41508a7e3c60c801 assets/infernodim/models/item/inferno_debris.json
+af41d6ea88cb82922fe3aed6fd157262941fc5f5 assets/infernodim/models/item/inferno_portal.json

@@ -1,3 +1,4 @@
-// 1.20.1	2024-07-07T21:53:02.8213337	Tags for minecraft:block mod id infernodim
+// 1.20.1	2024-07-07T23:26:12.3414506	Tags for minecraft:block mod id infernodim
 738980b4532c994c0d4155478323e8207ec71ed9 data/minecraft/tags/blocks/mineable/pickaxe.json
+5acd3195f4f83e99b05cbe941a6786bf8e776996 data/minecraft/tags/blocks/mineable/shovel.json
 738980b4532c994c0d4155478323e8207ec71ed9 data/minecraft/tags/blocks/needs_diamond_tool.json

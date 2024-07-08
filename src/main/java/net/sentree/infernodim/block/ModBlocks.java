@@ -15,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sentree.infernodim.InfernoMod;
+import net.sentree.infernodim.block.custom.ModPortalBlock;
 import net.sentree.infernodim.item.ModItems;
 
 public class ModBlocks {
@@ -27,10 +28,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> INFERNO_BLOCK = registerBlock("inferno_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).mapColor(MapColor.COLOR_ORANGE)));
 
+    public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND).mapColor(MapColor.COLOR_GRAY)));
 
 
 
 
+    public static final RegistryObject<Block> INFERNO_PORTAL = registerBlock("inferno_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_ORANGE).noLootTable().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,7 @@
+// 1.20.1	2024-07-08T13:56:02.1546002	Registries
+7d38b2accb9433766f76a9b56a94d95c7abf8229 data/infernodim/dimension/sentreedim.json
+abf5aaf776a614c337dd9efea7cbb961753321e8 data/infernodim/dimension_type/sentreedim_type.json
+7b3c8ec73157d234547261ddd5cd8de813288dbf data/infernodim/forge/biome_modifier/add_inferno_debris.json
+2dbad034c847bbc27fb3b130fb0fd9948e0c86ed data/infernodim/worldgen/biome/inferno_biome.json
+52810a1f8342cfe144b4648f7266ba8a9542dbaa data/infernodim/worldgen/configured_feature/sapphire_ore.json
+89ee19f83b70de19bdf5816e1c6b52e271bcfcc1 data/infernodim/worldgen/placed_feature/inferno_debris_placed.json

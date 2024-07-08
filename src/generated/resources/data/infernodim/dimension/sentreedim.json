@@ -1,0 +1,11 @@
+{
+  "type": "infernodim:sentreedim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "infernodim:inferno_biome"
+    },
+    "settings": "minecraft:nether"
+  }
+}
