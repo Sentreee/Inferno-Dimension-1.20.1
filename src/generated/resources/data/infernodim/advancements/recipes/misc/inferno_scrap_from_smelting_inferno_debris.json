@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inferno_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "infernodim:inferno_debris"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "infernodim:inferno_scrap_from_smelting_inferno_debris"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_inferno_debris",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "infernodim:inferno_scrap_from_smelting_inferno_debris"
+    ]
+  },
+  "sends_telemetry_event": false
+}

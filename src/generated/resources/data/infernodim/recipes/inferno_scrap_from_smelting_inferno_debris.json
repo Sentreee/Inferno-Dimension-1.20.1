@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "group": "inferno",
+  "ingredient": {
+    "item": "infernodim:inferno_debris"
+  },
+  "result": "infernodim:inferno_scrap"
+}
