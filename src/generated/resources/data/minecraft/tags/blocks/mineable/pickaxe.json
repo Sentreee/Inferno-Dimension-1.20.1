@@ -1,6 +1,8 @@
 {
   "values": [
     "infernodim:inferno_debris",
-    "infernodim:inferno_block"
+    "infernodim:inferno_block",
+    "infernodim:hardened_ash_block",
+    "infernodim:inferno_portal"
   ]
 }

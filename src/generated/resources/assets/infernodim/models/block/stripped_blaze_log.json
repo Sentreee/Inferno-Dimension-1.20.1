@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "infernodim:block/stripped_blaze_log_top",
+    "side": "infernodim:block/stripped_blaze_log"
+  }
+}

@@ -1,4 +1,12 @@
-// 1.20.1	2024-07-07T23:26:12.3444523	Loot Tables
+// 1.20.1	2024-07-08T16:10:54.4371463	Loot Tables
 331572a052a192ff74f3acb0fa24a534a8bbe0da data/infernodim/loot_tables/blocks/ash_block.json
+c5e9d39c3918f25fd4e5952f04ce3f44a9a5e42e data/infernodim/loot_tables/blocks/blaze_leaves.json
+22a199142336ddb0d39a84a52fbf3e7fd8ef7862 data/infernodim/loot_tables/blocks/blaze_log.json
+dade362b474fefbeed40abc5aca28669d55df23c data/infernodim/loot_tables/blocks/blaze_planks.json
+fc1bb66887aafda16ee4e4fbe5abf9a2967c8242 data/infernodim/loot_tables/blocks/blaze_sapling.json
+b93e153f3f5e749bf5c0df8337e82a62950ae439 data/infernodim/loot_tables/blocks/blaze_wood.json
+4ce436b03ad5bf1ada5b961fcea276547b2f5fc4 data/infernodim/loot_tables/blocks/hardened_ash_block.json
 378c602d5798f11a3b0da56e4e6f3fe69e0d7dc2 data/infernodim/loot_tables/blocks/inferno_block.json
 f488a70b9c5c7c4d421acbc0ce358a344af80d45 data/infernodim/loot_tables/blocks/inferno_debris.json
+377db7f0d6c493cb1e82005364306f4fc7a1a944 data/infernodim/loot_tables/blocks/stripped_blaze_log.json
+2d57d830e50a7bc5fb798c4019d6122b997e44df data/infernodim/loot_tables/blocks/stripped_blaze_wood.json

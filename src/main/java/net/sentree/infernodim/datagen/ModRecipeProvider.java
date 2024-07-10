@@ -49,6 +49,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', Items.LAVA_BUCKET)
                 .unlockedBy(getHasName(ModItems.INFERNO_SCRAP.get()), has(ModItems.INFERNO_SCRAP.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.INFERNO_PORTAL.get())
+                .pattern("SSS")
+                .pattern("SBB")
+                .pattern("BBL")
+                .define('S', ModItems.INFERNO_SCRAP.get())
+                .define('B', Items.BLAZE_ROD)
+                .define('L', Items.LAVA_BUCKET)
+                .unlockedBy(getHasName(ModItems.INFERNO_SCRAP.get()), has(ModItems.INFERNO_SCRAP.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -34,7 +34,7 @@ public class ModDimensions {
         context.register(SENTREE_DIM_TYPE, new DimensionType(
                 OptionalLong.of(18000), // fixedTime
                 false, // hasSkylight
-                false, // hasCeiling
+                true, // hasCeiling
                 true, // ultraWarm
                 true, // natural
                 1.0, // coordinateScale
@@ -44,9 +44,9 @@ public class ModDimensions {
                 256, // height
                 256, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
-                BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
-                1.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
+                BuiltinDimensionTypes.NETHER_EFFECTS, // effectsLocation
+                0.2f, // ambientLight
+                new DimensionType.MonsterSettings(true, false, ConstantInt.of(0), 0)));
     }
 
     public static void bootstrapStem(BootstapContext<LevelStem> context) {

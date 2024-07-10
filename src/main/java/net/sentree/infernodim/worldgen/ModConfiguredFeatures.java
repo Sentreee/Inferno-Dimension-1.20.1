@@ -14,37 +14,43 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.sentree.infernodim.InfernoMod;
 import net.sentree.infernodim.block.ModBlocks;
+import net.sentree.infernodim.util.ModTags;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INFERNO_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INFERNO_ORE_KEY = registerKey("inferno_ore");
 
-    //public static final ResourceKey<ConfiguredFeature<?, ?>> PINE_KEY = registerKey("pine");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLAZE_KEY = registerKey("blaze");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+        RuleTest ashReplaceable = new TagMatchTest(ModTags.Blocks.ASH_BLOCK_REPLACEABLES);
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 
-        List<OreConfiguration.TargetBlockState> overworldInfernoOres = List.of(OreConfiguration.target(stoneReplaceable,
+        List<OreConfiguration.TargetBlockState> overworldInfernoOres = List.of(OreConfiguration.target(ashReplaceable,
                 ModBlocks.INFERNO_DEBRIS.get().defaultBlockState()));
 
-        register(context, OVERWORLD_INFERNO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInfernoOres, 1));
+        register(context, OVERWORLD_INFERNO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInfernoOres, 25));
 
-        //register(context, PINE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-        //        BlockStateProvider.simple(ModBlocks.PINE_LOG.get()),
-        //        new PineTrunkPlacer(5, 4, 3),
+        register(context, BLAZE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BLAZE_LOG.get()),
+                new BendingTrunkPlacer(6, 5, 1,1,ConstantInt.of(1)),
 
-        //        BlockStateProvider.simple(ModBlocks.PINE_LEAVES.get()),
-        //        new PineFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                BlockStateProvider.simple(ModBlocks.BLAZE_LEAVES.get()),
+                new SpruceFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(4)),
 
-        //        new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(2, 1, 2)).build());
     }
 
 

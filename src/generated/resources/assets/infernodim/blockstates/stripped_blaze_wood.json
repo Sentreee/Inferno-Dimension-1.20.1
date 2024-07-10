@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "infernodim:block/stripped_blaze_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "infernodim:block/stripped_blaze_wood"
+    },
+    "axis=z": {
+      "model": "infernodim:block/stripped_blaze_wood_horizontal",
+      "x": 90
+    }
+  }
+}

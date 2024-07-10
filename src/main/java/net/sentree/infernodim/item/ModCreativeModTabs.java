@@ -21,11 +21,22 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.INFERNO_INGOT.get());
                         pOutput.accept(ModItems.INFERNO_SCRAP.get());
+                        pOutput.accept(ModItems.YORKSHIRE_GOLD_TEA.get());
 
                         pOutput.accept(ModBlocks.INFERNO_DEBRIS.get());
                         pOutput.accept(ModBlocks.INFERNO_BLOCK.get());
                         pOutput.accept(ModBlocks.ASH_BLOCK.get());
                         pOutput.accept(ModBlocks.INFERNO_PORTAL.get());
+                        pOutput.accept(ModBlocks.HARDENED_ASH_BLOCK.get());
+
+                        pOutput.accept(ModBlocks.BLAZE_PLANKS.get());
+                        pOutput.accept(ModBlocks.BLAZE_SAPLING.get());
+                        pOutput.accept(ModBlocks.BLAZE_LOG.get());
+                        pOutput.accept(ModBlocks.BLAZE_WOOD.get());
+                        pOutput.accept(ModBlocks.BLAZE_LEAVES.get());
+                        pOutput.accept(ModBlocks.BLAZE_PLANKS.get());
+                        pOutput.accept(ModBlocks.STRIPPED_BLAZE_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_BLAZE_WOOD.get());
 
 
 

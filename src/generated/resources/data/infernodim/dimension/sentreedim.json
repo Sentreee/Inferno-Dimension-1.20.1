@@ -6,6 +6,6 @@
       "type": "minecraft:fixed",
       "biome": "infernodim:inferno_biome"
     },
-    "settings": "minecraft:nether"
+    "settings": "minecraft:overworld"
   }
 }

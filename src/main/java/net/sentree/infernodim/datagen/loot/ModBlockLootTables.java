@@ -27,6 +27,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.INFERNO_BLOCK.get());
         this.dropSelf(ModBlocks.INFERNO_DEBRIS.get());
         this.dropSelf(ModBlocks.ASH_BLOCK.get());
+        this.dropSelf(ModBlocks.HARDENED_ASH_BLOCK.get());
+        this.dropSelf(ModBlocks.BLAZE_LOG.get());
+        this.dropSelf(ModBlocks.BLAZE_WOOD.get());
+        this.dropSelf(ModBlocks.BLAZE_PLANKS.get());
+        this.dropSelf(ModBlocks.BLAZE_SAPLING.get());
+        this.dropSelf(ModBlocks.STRIPPED_BLAZE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_BLAZE_WOOD.get());
+
+        this.add(ModBlocks.BLAZE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BLAZE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
     }
 

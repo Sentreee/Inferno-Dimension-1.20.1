@@ -1,9 +1,11 @@
-// 1.20.1	2024-07-07T21:53:02.8263378	Recipes
+// 1.20.1	2024-07-08T16:10:54.4381478	Recipes
 753e29ac9776d6c38aee31a076801581d8db4bfd data/infernodim/advancements/recipes/misc/inferno_block.json
 47b095b34f730badd92cfcefca91b5d088d45874 data/infernodim/advancements/recipes/misc/inferno_ingot.json
+da9b400d24ea1a6be611293e1a4beccb3c3a0b54 data/infernodim/advancements/recipes/misc/inferno_portal.json
 1ba8f3ae3b7587c025cae39f0266a9234ae479aa data/infernodim/advancements/recipes/misc/inferno_scrap_from_blasting_inferno_debris.json
 088ff1728736927b9d19ad6a7fe7f4b9bf2073c8 data/infernodim/advancements/recipes/misc/inferno_scrap_from_smelting_inferno_debris.json
 93e9d22938b4b4fd23c7a4b31b0fc9f79b905ded data/infernodim/recipes/inferno_block.json
 8b07635ba73317dda55ebec92a9c1ccd9c8761c5 data/infernodim/recipes/inferno_ingot.json
+e0373c9d891f201bbbd37f6e40266c3f9544aa1e data/infernodim/recipes/inferno_portal.json
 406a3f358148c6ab72d2e83f6def443d79165b88 data/infernodim/recipes/inferno_scrap_from_blasting_inferno_debris.json
 33ee7f496c85da5eb12352c51ab1178b8c896c54 data/infernodim/recipes/inferno_scrap_from_smelting_inferno_debris.json

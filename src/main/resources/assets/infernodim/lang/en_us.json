@@ -1,11 +1,20 @@
 {
   "item.infernodim.inferno_scrap": "Inferno Scrap",
   "item.infernodim.inferno_ingot": "Inferno Ingot",
+  "item.infernodim.yorkshire_gold_tea": "§eYorkshire Gold Tea",
 
   "block.infernodim.inferno_block": "Inferno Block",
   "block.infernodim.inferno_debris": "Inferno Debris",
   "block.infernodim.ash_block": "Ash Block",
   "block.infernodim.inferno_portal": "Inferno Portal",
+  "block.infernodim.hardened_ash_block": "Hardened Ash Block",
+  "block.infernodim.blaze_log": "Blaze_Log",
+  "block.infernodim.stripped_blaze_log": "Stripped Blaze Log",
+  "block.infernodim.blaze_wood": "Blaze Wood",
+  "block.infernodim.stripped_blaze_wood": "Stripped Blaze Wood",
+  "block.infernodim.blaze_planks": "Blaze Planks",
+  "block.infernodim.blaze_leaves": "Blaze Leaves",
+  "block.infernodim.blaze_sapling": "Blaze Sapling",
 
   "creativetab.inferno_tab": "Inferno Tab"
 }
