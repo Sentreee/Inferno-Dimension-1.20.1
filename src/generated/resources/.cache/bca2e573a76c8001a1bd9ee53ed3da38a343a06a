@@ -1,10 +1,11 @@
-// 1.20.1	2024-07-08T16:10:54.4391478	Block States: infernodim
+// 1.20.1	2024-07-10T00:08:19.7805081	Block States: infernodim
 a814ab586d2907c1f96d44dd09bd7dfa96390d86 assets/infernodim/blockstates/ash_block.json
 f369fd3f761f4afdc4cee14d2e6f1fdf6cb84d62 assets/infernodim/blockstates/blaze_leaves.json
 c8dc05720e9c72b77d5d6322816f987ea0f122a9 assets/infernodim/blockstates/blaze_log.json
 bcf95cbf50516e0459554af84e987a862c7bd574 assets/infernodim/blockstates/blaze_planks.json
 7e9cf37b4d9dd2db53d73178f260180f8ccad5d9 assets/infernodim/blockstates/blaze_sapling.json
 440664c814f9a71a0bd21340c7f0563f040e649a assets/infernodim/blockstates/blaze_wood.json
+85b9b3af2d45693b19b61f7df8e87c7dab56882a assets/infernodim/blockstates/hardened_ash_block.json
 a41bbcf952a38d0c79c64aae67696f720e6575db assets/infernodim/blockstates/inferno_block.json
 e591cee3f2d03cfc21874c7726b4188b8f3ad4ae assets/infernodim/blockstates/inferno_debris.json
 68c38f6d10c813bf9d32a8e848a6897240fc1fd4 assets/infernodim/blockstates/inferno_portal.json
@@ -18,6 +19,7 @@ e4d982244f6cec482a98d9a383e583e44c39d861 assets/infernodim/models/block/blaze_pl
 67a84b093c7bdbe363b30f6b44d067e04f77c518 assets/infernodim/models/block/blaze_sapling.json
 9ad01b582f61ff5cc193025699efe6d332498b30 assets/infernodim/models/block/blaze_wood.json
 abcb97d1c76d31acf1f4f596dfcb429339eda65c assets/infernodim/models/block/blaze_wood_horizontal.json
+a73f080e0582e374c8146d95c97aa3392dc790a5 assets/infernodim/models/block/hardened_ash_block.json
 ea2969d723bbaefe80462b2a0dccc584d7839881 assets/infernodim/models/block/inferno_block.json
 fcf0e7600043bd4b136bf4b95de0f225571804e3 assets/infernodim/models/block/inferno_debris.json
 e0552da589021bcf5479450fe9d1314c526c3686 assets/infernodim/models/block/inferno_portal.json
@@ -30,6 +32,7 @@ f1c384881cfdbc99e29c5989081c0ae5c963ea80 assets/infernodim/models/item/blaze_lea
 d2ca80950ace64d1d57d7b89d71a547333bb2304 assets/infernodim/models/item/blaze_log.json
 2a74058c40b62832496d51693947d260b5bc26be assets/infernodim/models/item/blaze_planks.json
 c8f2c113519c43461ec75378b06e8c3c4aa5a625 assets/infernodim/models/item/blaze_wood.json
+90734599ac67f81dfd4310f68fb0810858b19751 assets/infernodim/models/item/hardened_ash_block.json
 85c5a95cb80ac9e82d00e2cd52eb643c15dca485 assets/infernodim/models/item/inferno_block.json
 7e65eb8877bbedffc76f02dc41508a7e3c60c801 assets/infernodim/models/item/inferno_debris.json
 af41d6ea88cb82922fe3aed6fd157262941fc5f5 assets/infernodim/models/item/inferno_portal.json

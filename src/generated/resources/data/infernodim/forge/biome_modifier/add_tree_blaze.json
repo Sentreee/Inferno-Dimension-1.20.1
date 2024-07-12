@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#infernodim:is_inferno",
+  "biomes": "#forge:is_void",
   "features": "infernodim:blaze_placed",
   "step": "vegetal_decoration"
 }

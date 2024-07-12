@@ -32,7 +32,6 @@
       "minecraft:spring_lava"
     ],
     [
-      "minecraft:trees_plains",
       "infernodim:blaze_placed"
     ]
   ],
@@ -44,15 +43,15 @@
     "creature": [
       {
         "type": "minecraft:magma_cube",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 3
+        "maxCount": 5,
+        "minCount": 2,
+        "weight": 6
       },
       {
         "type": "minecraft:blaze",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 2
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 5
       }
     ],
     "misc": [],

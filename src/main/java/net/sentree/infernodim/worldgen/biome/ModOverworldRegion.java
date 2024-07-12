@@ -14,13 +14,13 @@ import java.util.function.Consumer;
 
 public class ModOverworldRegion extends Region {
     public ModOverworldRegion(ResourceLocation name, int weight) {
-        super(name, RegionType.NETHER, weight);
+        super(name, RegionType.OVERWORLD, weight);
     }
 
-    //@Override
-    //public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-    //    this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-    //        modifiedVanillaOverworldBuilder.replaceBiome(Biomes.PLAINS, ModBiomes.INFERNO_BIOME);
-    //    });
-    //}
+    @Override
+    public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.SWAMP, ModBiomes.INFERNO_BIOME);
+        });
+    }
 }

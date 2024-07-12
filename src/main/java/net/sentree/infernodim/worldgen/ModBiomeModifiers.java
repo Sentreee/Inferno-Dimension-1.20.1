@@ -1,21 +1,17 @@
 package net.sentree.infernodim.worldgen;
 
-import net.minecraft.commands.arguments.ResourceKeyArgument;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.sentree.infernodim.InfernoMod;
-import net.sentree.infernodim.util.ModTags;
-import net.sentree.infernodim.worldgen.biome.ModBiomes;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_INFERNO_DEBRIS = registerKey("add_inferno_debris");
@@ -33,7 +29,7 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_TREE_BLAZE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(ModTags.Biomes.IS_INFERNO),
+                biomes.getOrThrow(Tags.Biomes.IS_VOID),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BLAZE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }

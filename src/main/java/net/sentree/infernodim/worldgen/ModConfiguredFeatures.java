@@ -1,5 +1,8 @@
 package net.sentree.infernodim.worldgen;
 
+import com.google.common.collect.ImmutableMap;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -7,11 +10,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
@@ -23,11 +25,15 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+import net.minecraftforge.common.Tags;
+import net.minecraftforge.registries.RegistryObject;
 import net.sentree.infernodim.InfernoMod;
 import net.sentree.infernodim.block.ModBlocks;
+import net.sentree.infernodim.feature.ModFeatures;
 import net.sentree.infernodim.util.ModTags;
 
 import java.util.List;
+import java.util.Map;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INFERNO_ORE_KEY = registerKey("inferno_ore");
@@ -37,20 +43,24 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest ashReplaceable = new TagMatchTest(ModTags.Blocks.ASH_BLOCK_REPLACEABLES);
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreConfiguration.TargetBlockState> overworldInfernoOres = List.of(OreConfiguration.target(ashReplaceable,
-                ModBlocks.INFERNO_DEBRIS.get().defaultBlockState()));
+                ModBlocks.INFERNO_DEBRIS.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.INFERNO_DEBRIS.get().defaultBlockState()),
+                OreConfiguration.target(stoneReplaceable, ModBlocks.INFERNO_DEBRIS.get().defaultBlockState()));
 
-        register(context, OVERWORLD_INFERNO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInfernoOres, 25));
+        register(context, OVERWORLD_INFERNO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInfernoOres, 3));
 
         register(context, BLAZE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.BLAZE_LOG.get()),
-                new BendingTrunkPlacer(6, 5, 1,1,ConstantInt.of(1)),
+                new StraightTrunkPlacer(5,4,3),
 
                 BlockStateProvider.simple(ModBlocks.BLAZE_LEAVES.get()),
-                new SpruceFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(4)),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2),3),
 
-                new TwoLayersFeatureSize(2, 1, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
     }
 
 

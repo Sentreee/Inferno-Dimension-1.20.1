@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.INFERNO_INGOT.get());
                         pOutput.accept(ModItems.INFERNO_SCRAP.get());
                         pOutput.accept(ModItems.YORKSHIRE_GOLD_TEA.get());
+                        pOutput.accept(ModItems.BLAZE_SERPENT_SPAWN_EGG.get());
 
                         pOutput.accept(ModBlocks.INFERNO_DEBRIS.get());
                         pOutput.accept(ModBlocks.INFERNO_BLOCK.get());

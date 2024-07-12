@@ -2,8 +2,8 @@
   "feature": "infernodim:inferno_ore",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 25
+      "type": "minecraft:rarity_filter",
+      "chance": 32
     },
     {
       "type": "minecraft:in_square"
@@ -13,7 +13,7 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 80
+          "absolute": 100
         },
         "min_inclusive": {
           "absolute": -64

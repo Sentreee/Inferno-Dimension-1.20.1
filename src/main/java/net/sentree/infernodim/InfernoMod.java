@@ -1,10 +1,14 @@
 package net.sentree.infernodim;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +18,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sentree.infernodim.block.ModBlocks;
+import net.sentree.infernodim.entity.ModEntities;
+import net.sentree.infernodim.entity.client.BlazeSerpentRenderer;
+import net.sentree.infernodim.feature.ModFeatures;
 import net.sentree.infernodim.item.ModCreativeModTabs;
 import net.sentree.infernodim.item.ModItems;
 import net.sentree.infernodim.worldgen.biome.ModTerrablender;
@@ -36,6 +43,8 @@ public class InfernoMod {
         ModBlocks.register(modEventBus);
 
         ModTerrablender.registerBiomes();
+        ModFeatures.register(modEventBus);
+        ModEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -68,13 +77,8 @@ public class InfernoMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.BLAZE_SERPENT.get(), BlazeSerpentRenderer::new);
 
-        }
-    }
-
-    private void clientInit(final FMLClientSetupEvent event) {
-        if (ModList.get().isLoaded("appleskin")) {
-            //MinecraftForge.EVENT_BUS.register(new AppleSkinEventHandler());
         }
     }
 }

@@ -9,10 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
@@ -21,6 +18,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sentree.infernodim.InfernoMod;
+import net.sentree.infernodim.block.custom.CustomSaplingBlock;
 import net.sentree.infernodim.block.custom.ModFlammableRotatedPillarBlock;
 import net.sentree.infernodim.block.custom.ModPortalBlock;
 import net.sentree.infernodim.item.ModItems;
@@ -91,7 +89,7 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> BLAZE_SAPLING = registerBlock("blaze_sapling",
-            () -> new SaplingBlock(new BlazeTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new CustomSaplingBlock(new BlazeTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 

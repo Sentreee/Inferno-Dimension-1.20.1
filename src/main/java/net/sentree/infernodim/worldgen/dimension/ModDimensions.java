@@ -1,6 +1,5 @@
 package net.sentree.infernodim.worldgen.dimension;
 
-import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -18,7 +17,6 @@ import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import net.sentree.infernodim.InfernoMod;
 import net.sentree.infernodim.worldgen.biome.ModBiomes;
 
-import java.util.List;
 import java.util.OptionalLong;
 
 public class ModDimensions {

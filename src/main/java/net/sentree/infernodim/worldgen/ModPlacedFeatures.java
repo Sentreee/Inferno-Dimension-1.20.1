@@ -10,9 +10,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraftforge.registries.RegistryObject;
 import net.sentree.infernodim.InfernoMod;
 import net.sentree.infernodim.block.ModBlocks;
 
@@ -23,16 +22,21 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> BLAZE_PLACED_KEY = registerKey("blaze_placed");
 
+    public static final ResourceKey<PlacedFeature> HARDENED_ASH_PLACED_KEY = registerKey("hardened_ash");
+
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, INFERNO_DEBRIS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_INFERNO_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(25,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                ModOrePlacement.rareOrePlacement(32,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
 
         register(context, BLAZE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLAZE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.BLAZE_SAPLING.get()));
+
+
     }
 
 

@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.INFERNO_DEBRIS);
         blockWithItem(ModBlocks.ASH_BLOCK);
         blockWithItem(ModBlocks.INFERNO_PORTAL);
+        blockWithItem(ModBlocks.HARDENED_ASH_BLOCK);
 
         saplingBlock(ModBlocks.BLAZE_SAPLING);
 

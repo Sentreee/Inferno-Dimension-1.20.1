@@ -25,6 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.BLAZE_SAPLING);
 
+        withExistingParent(ModItems.BLAZE_SERPENT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
 
 
     }
